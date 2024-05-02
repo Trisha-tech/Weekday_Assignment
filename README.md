@@ -57,6 +57,9 @@ git clone https://github.com/<your_github_username>/Weekday_Assignment.git
 ## 📸 Screenshot
 
 
+![screenshot-weekday-assignment onrender com-2024 05 02-19_56_39](https://github.com/Trisha-tech/Weekday_Assignment/assets/55338588/2698fff7-8780-4794-9ce4-e5598654a69a)
+
+
 
 **USER INTERFACE (UI)**
 
