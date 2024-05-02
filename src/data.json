@@ -4,95 +4,131 @@
         "title": "Frontend Developer",
         "company": "Weekday",
         "location": "Delhi",
-        "description": "chsdfhdkfk   rirjfrfjfeofkef          uerir",
-        "experience": "1 year"
+        "description": "This is a full-time remote role for a Frontend Developer. As a Frontend Developer at codecanvas10, you will be responsible for developing and implementing user interface components using HTML, CSS, and JavaScript. You will collaborate closely with the design and backend teams to ensure seamless integration of front-end and back-end functionalities. This role requires strong problem-solving skills, attention to detail, and the ability to work in a fast-paced and collaborative environment.",
+        "experience": "1 year",
+        "salary":"5-6",
+        "remote":"Hybrid",
+        "techStack":"ReactJS, HTML, CSS, JavaScript, Redux, Material UI"
     },
     {
         "id": 2,
-        "title": "Frontend Developer",
-        "company": "Weekday",
-        "location": "Delhi",
-        "description": "chsdfhdkfk   rirjfrfjfeofkef          uerir",
-        "experience": "1 year"
+        "title": "FullStack Engineer",
+        "company": "Uplers",
+        "location": "Bengaluru",
+        "description":"As a Junior Fullstack Engineer you will play a crucial role in the development of our web applications from conception to deployment. With a strong emphasis on UI/UX design, you will ensure our products offer seamless and engaging user experiences. You'll work closely with our product team to bring our visions to life, leveraging your expertise in TypeScript/JavaScript and ReactJS to develop robust solutions that meet our high standards for aesthetics and functionality.",
+        "experience": "3-4 year",
+        "salary":"8",
+        "remote":"Onsite",
+        "techStack":"Problem Solving Attitude, TypeScript, API Design, Figma, JavaScript, React Js, UI/UX Design, HTML / CSS, Strong Attention to Detail"
     },
     {
         "id": 3,
-        "title": "Frontend Developer",
-        "company": "Weekday",
-        "location": "Delhi",
-        "description": "chsdfhdkfk   rirjfrfjfeofkef          uerir",
-        "experience": "1 year"
+        "title": "JavaScript Developer",
+        "company": "Crossover",
+        "location": "Bengaluru",
+        "description": "Crossover is the world's #1 source of remote jobs. Our clients offer top-tier pay for top-tier talent. We're recruiting this role for our client, Bloom Institute of Technology (BloomTech). Have you got what it takes? You’re an expert full-stack web developer. You’re the go-to person when your colleagues have questions. You’re ready to build a personal brand as an expert in the field, and here’s your chance! Teach new junior web developers your world-class skills, without giving up your day job.",
+        "experience": "1 year",
+        "salary":"6",
+        "remote":"Remote",
+        "techStack":"HTML, CSS, JavaScript"
     },
     {
         "id": 4,
-        "title": "Frontend Developer",
-        "company": "Weekday",
+        "title": "Software Engineer",
+        "company": "Microsoft",
         "location": "Delhi",
-        "description": "chsdfhdkfk   rirjfrfjfeofkef          uerir",
-        "experience": "1 year"
+        "description": "We are hiring software engineers (full-stack, back-end) to join our supply chain management application team who are supporting customers today and designing for tomorrow. Familiarity with business applications or a keen interest in learning them is essential, as our progress hinges on recognizing our customers' elaborate circumstances, in conjunction with proficient software engineering and a continuous learning approach.",
+        "experience": "2 year",
+        "salary":"12",
+        "remote":"Hybrid",
+        "techStack":"Android, IOS, React Native, JavaScript, PostgreSQL, Linux"
     },
     {
         "id": 5,
-        "title": "Frontend Developer",
-        "company": "Weekday",
-        "location": "Delhi",
-        "description": "chsdfhdkfk   rirjfrfjfeofkef          uerir",
-        "experience": "1 year"
+        "title": "Python Developer",
+        "company": "Coders Brain",
+        "location": "Noida",
+        "description":  "At least 3 Years exp. In Python development. Fair understanding of building RESTful APIs. Basic understanding of front-end technologies, such as JavaScript, HTML5, and CSS3. Working knowledge of MongoDB and MySQL",
+        "experience": "3+ year",
+        "salary":"4",
+        "remote":"Onsite",
+        "techStack":"Django, Flask, PHP, JavaScript, HTML, CSS, MongoDB"
     },
     {
         "id": 6,
         "title": "Frontend Developer",
-        "company": "Weekday",
-        "location": "Delhi",
-        "description": "chsdfhdkfk   rirjfrfjfeofkef          uerir",
-        "experience": "1 year"
+        "company": "IBM",
+        "location": "Pune",
+        "description": "As an Application Developer, you will lead IBM into the future by translating system requirements into the design and development of customized systems in an agile environment. The success of IBM is in your hands as you transform vital business needs into code and drive innovation. Your work will power IBM and its clients globally, collaborating and integrating code into enterprise systems. You will have access to the latest education, tools and technology, and a limitless career path with the world’s technology leader. Come to IBM and make a global impact!",
+        "experience": "1 year",
+        "salary":"4",
+        "remote":"Onsite",
+        "techStack":"ReactJs, Nodejs, Nextjs, JavaScript, GraphQL, OOOJs"
     },
     {
         "id": 7,
-        "title": "Frontend Developer",
-        "company": "Weekday",
-        "location": "Delhi",
-        "description": "chsdfhdkfk   rirjfrfjfeofkef          uerir",
-        "experience": "1 year"
+        "title": "Software Developer",
+        "company": "S & P Global",
+        "location": "Gurugram",
+        "description": "The Data Transformation team is responsible for driving key automation projects, machine learning based solutions and lean initiatives across S&P Global Market Intelligence. As custodians of the transformation strategy for the Chief Data Office, we are responsible for creating, planning, and delivering transformational projects for the company using state of the art technologies and data science methods, developed either in house or in partnership with vendors.",
+        "experience": "3 year",
+        "salary":"6",
+        "remote":"Hybrid",
+        "techStack":"HTML, CSS, AWS, TypeScript, MySQL, PostgreSQL, "
     },
     {
         "id": 8,
-        "title": "Frontend Developer",
-        "company": "Weekday",
-        "location": "Delhi",
-        "description": "chsdfhdkfk   rirjfrfjfeofkef          uerir",
-        "experience": "1 year"
+        "title": "Backend Developer",
+        "company": "Zigsaw",
+        "location": "Pune",
+        "description": "We are looking for a Back-End Web Developer responsible for managing the interchange of data between the server and the users. Your primary focus will be development of all server-side logic, definition and maintenance of the central database, and ensuring high performance and responsiveness to requests from the front-end. You will also be responsible for integrating the front-end elements built by your co-workers into the application. A basic understanding of front-end technologies is therefore necessary as well.",
+        "experience": "1 year",
+        "salary":"6-7",
+        "remote":"Onsite",
+        "techStack":"PHP, GraphQL, NodeJS, MongoDB, ExpressJS, Restful APIs"
     },
     {
         "id": 9,
-        "title": "Frontend Developer",
-        "company": "Weekday",
-        "location": "Delhi",
-        "description": "chsdfhdkfk   rirjfrfjfeofkef          uerir",
-        "experience": "1 year"
+        "title": "Web Developer Associate",
+        "company": "Accenture",
+        "location": "Mumbai",
+        "description": "Accenture is a global professional services company with leading capabilities in digital, cloud and security.Combining unmatched experience and specialized skills across more than 40 industries, we offer Strategy and Consulting, Technology and Operations services, and Accenture Song— all powered by the world’s largest network of Advanced Technology and Intelligent Operations centers. Our 699,000 people deliver on the promise of technology and human ingenuity every day, serving clients in more than 120 countries. We embrace the power of change to create value and shared success for our clients, people, shareholders, partners and communities.Visit us at www.accenture.com. ",
+        "experience": "1-3 year",
+        "salary":"7-8",
+        "remote":"Onsite",
+        "techStack":"OOPS, Operating System SEO, Cloud Computing"
     },
     {
         "id": 10,
-        "title": "Frontend Developer",
-        "company": "Weekday",
-        "location": "Delhi",
-        "description": "chsdfhdkfk   rirjfrfjfeofkef          uerir",
-        "experience": "1 year"
+        "title": "Full Stack Developer",
+        "company": "Real Page Inc",
+        "location": "Hyderabad",
+        "description": "We are seeking a highly skilled and motivated Fullstack Developer to join our development team. As a Fullstack Developer, you will be responsible for developing, testing, and maintaining software applications. The ideal candidate will have a solid background in software development with proficiency in multiple programming languages (including React, TypeScript and Python) and experience in building scalable, high-performance applications.",
+        "experience": "9+ year",
+        "salary":"10",
+        "remote":"Hybrid",
+        "techStack":"AWS, NodeJS, JavaScript, Scrum, NoSQL, DevOps"
     },
     {
         "id": 11,
-        "title": "Frontend Developer",
-        "company": "Weekday",
+        "title": "RPA Testing",
+        "company": "FedEx",
         "location": "Delhi",
-        "description": "chsdfhdkfk   rirjfrfjfeofkef          uerir",
-        "experience": "1 year"
+        "description": "FedEx ACC supports the technological and digital requirements of the entire FedEx enterprise. When you join FedEx, you join a team that’s 500,000 strong around the world with one purpose: to provide customers with outstanding experiences as we connect the world to what’s next. We deliver packages but that’s not all we do. We’re a leader in technology solutions, providing data insights that boost opportunities for global customers in e-commerce. We are creating the world’s most flexible, efficient, and intelligent supply chain for our customers, and we need passionate people committed to the same values focused on care, balance, inclusivity, results, and transformation. Join us as we deliver what’s next!",
+        "experience": "4+ year",
+        "salary":"11",
+        "remote":"Hybrid",
+        "techStack":"RPA Testing, Automation Testing, Selenium"
     },
     {
         "id": 12,
-        "title": "Frontend Developer",
-        "company": "Weekday",
-        "location": "Delhi",
-        "description": "chsdfhdkfk   rirjfrfjfeofkef          uerir",
-        "experience": "1 year"
+        "title": "Junior Software Engineer",
+        "company": "CodeMonk",
+        "location": "Jaipur",
+        "description": "At CodeMonk, we’re venturing into new territories, shaping the future of diverse and decentralised teams. We know finding the right talents and teams is a major challenge in today’s skills market. That’s why we’re creating a gateway for companies to access the best global talents and teams that are agile and match their business needs.",
+        "experience": "1+ year",
+        "salary":"3-4",
+        "remote":"Remote",
+        "techStack":"Java, MySQL, Spring, PostgreSQL, Html, CSS, RESTful APIs"
     }
 ]

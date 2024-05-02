@@ -40,11 +40,10 @@ const company = [
     'IBM',
     'S&P Global',
     'Zigsaw',
-    'JobDost',
     'Accenture',
     'RealPage, Inc',
     'FedEx ACC',
-    'LTIMindTree'
+    'CodeMonk'
 ];
 
 const remote = [
