@@ -8,7 +8,7 @@ import OutlinedInput from '@mui/material/OutlinedInput';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
-import { Container,Typography } from '@mui/material';
+import { Container, Typography } from '@mui/material';
 import Button from '@mui/material/Button';
 
 const ITEM_HEIGHT = 48;
@@ -127,13 +127,7 @@ function getStyles(name, personName, theme) {
     };
 }
 
-const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-    ...theme.typography.body2,
-    padding: theme.spacing(1),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-}));
+
 
 export default function Filter() {
     const theme = useTheme();
@@ -156,268 +150,265 @@ export default function Filter() {
         );
     };
     return (
-       <Box>
-        <Box bgcolor="black" color="white" style={{height:"200px"}}>
-             <Typography variant='h4' align='center' style={{paddingTop:"80px"}}>
-                Candidate Application
-            </Typography>
+        <Box>
+            <Box bgcolor="black" color="white" style={{ height: "200px" }}>
+                <Typography variant='h4' align='center' style={{ paddingTop: "80px" }}>
+                    Candidate Application
+                </Typography>
             </Box>
-       
-       <Container>
-           
-            <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-                <Grid item xs={6} sm={3} md={3}>
 
-                    <FormControl sx={{ m: 4, width: 250, mt: 3 }}>
-                        <Select
-                            multiple
-                            displayEmpty
-                            value={personExp}
-                            onChange={handleChange}
-                            input={<OutlinedInput />}
-                            renderValue={(selected) => {
-                                if (selected.length === 0) {
-                                    return <em>Experience</em>;
-                                }
+            <Container>
 
-                                return selected.join(', ');
-                            }}
-                            MenuProps={MenuProps}
-                            inputProps={{ 'aria-label': 'Without label' }}
-                        >
-                            <MenuItem disabled value="">
-                                <em>Experience</em>
-                            </MenuItem>
-                            {experience.map((name) => (
-                                <MenuItem
-                                    key={name}
-                                    value={name}
-                                    style={getStyles(name, personName, theme)}
-                                >
-                                    {name}
+                <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+                    <Grid item xs={6} sm={3} md={3}>
+
+                        <FormControl sx={{ m: 4, width: 250, mt: 3 }}>
+                            <Select
+                                multiple
+                                displayEmpty
+                                value={personExp}
+                                onChange={handleChange}
+                                input={<OutlinedInput />}
+                                renderValue={(selected) => {
+                                    if (selected.length === 0) {
+                                        return <em>Experience</em>;
+                                    }
+
+                                    return selected.join(', ');
+                                }}
+                                MenuProps={MenuProps}
+                                inputProps={{ 'aria-label': 'Without label' }}
+                            >
+                                <MenuItem disabled value="">
+                                    <em>Experience</em>
                                 </MenuItem>
-                            ))}
-                        </Select>
-                    </FormControl>
+                                {experience.map((name) => (
+                                    <MenuItem
+                                        key={name}
+                                        value={name}
+                                        style={getStyles(name, personName, theme)}
+                                    >
+                                        {name}
+                                    </MenuItem>
+                                ))}
+                            </Select>
+                        </FormControl>
 
-                </Grid>
-                <Grid item xs={6} sm={3} md={3}>
+                    </Grid>
+                    <Grid item xs={6} sm={3} md={3}>
 
-                    <FormControl sx={{ m: 4, width: 250, mt: 3 }}>
-                        <Select
-                            multiple
-                            displayEmpty
-                            value={personCompany}
-                            onChange={handleChange}
-                            input={<OutlinedInput />}
-                            renderValue={(selected) => {
-                                if (selected.length === 0) {
-                                    return <em>Company</em>;
-                                }
+                        <FormControl sx={{ m: 4, width: 250, mt: 3 }}>
+                            <Select
+                                multiple
+                                displayEmpty
+                                value={personCompany}
+                                onChange={handleChange}
+                                input={<OutlinedInput />}
+                                renderValue={(selected) => {
+                                    if (selected.length === 0) {
+                                        return <em>Company</em>;
+                                    }
 
-                                return selected.join(', ');
-                            }}
-                            MenuProps={MenuProps}
-                            inputProps={{ 'aria-label': 'Without label' }}
-                        >
-                            <MenuItem disabled value="">
-                                <em>Company</em>
-                            </MenuItem>
-                            {company.map((name) => (
-                                <MenuItem
-                                    key={name}
-                                    value={name}
-                                    style={getStyles(name, personName, theme)}
-                                >
-                                    {name}
+                                    return selected.join(', ');
+                                }}
+                                MenuProps={MenuProps}
+                                inputProps={{ 'aria-label': 'Without label' }}
+                            >
+                                <MenuItem disabled value="">
+                                    <em>Company</em>
                                 </MenuItem>
-                            ))}
-                        </Select>
-                    </FormControl>
+                                {company.map((name) => (
+                                    <MenuItem
+                                        key={name}
+                                        value={name}
+                                        style={getStyles(name, personName, theme)}
+                                    >
+                                        {name}
+                                    </MenuItem>
+                                ))}
+                            </Select>
+                        </FormControl>
 
-                </Grid>
-                <Grid item xs={6} sm={3} md={3}>
-                    <FormControl sx={{ m: 4, width: 250, mt: 3 }}>
-                        <Select
-                            multiple
-                            displayEmpty
-                            value={personRemote}
-                            onChange={handleChange}
-                            input={<OutlinedInput />}
-                            renderValue={(selected) => {
-                                if (selected.length === 0) {
-                                    return <em>Remote</em>;
-                                }
+                    </Grid>
+                    <Grid item xs={6} sm={3} md={3}>
+                        <FormControl sx={{ m: 4, width: 250, mt: 3 }}>
+                            <Select
+                                multiple
+                                displayEmpty
+                                value={personRemote}
+                                onChange={handleChange}
+                                input={<OutlinedInput />}
+                                renderValue={(selected) => {
+                                    if (selected.length === 0) {
+                                        return <em>Remote</em>;
+                                    }
 
-                                return selected.join(', ');
-                            }}
-                            MenuProps={MenuProps}
-                            inputProps={{ 'aria-label': 'Without label' }}
-                        >
-                            <MenuItem disabled value="">
-                                <em>Remote</em>
-                            </MenuItem>
-                            {remote.map((name) => (
-                                <MenuItem
-                                    key={name}
-                                    value={name}
-                                    style={getStyles(name, personName, theme)}
-                                >
-                                    {name}
+                                    return selected.join(', ');
+                                }}
+                                MenuProps={MenuProps}
+                                inputProps={{ 'aria-label': 'Without label' }}
+                            >
+                                <MenuItem disabled value="">
+                                    <em>Remote</em>
                                 </MenuItem>
-                            ))}
-                        </Select>
-                    </FormControl>
-                </Grid>
-                <Grid item xs={6} sm={3} md={3}>
-                    <FormControl sx={{ m: 4, width: 250, mt: 3 }}>
-                        <Select
-                            multiple
-                            displayEmpty
-                            value={personLocation}
-                            onChange={handleChange}
-                            input={<OutlinedInput />}
-                            renderValue={(selected) => {
-                                if (selected.length === 0) {
-                                    return <em>Location</em>;
-                                }
+                                {remote.map((name) => (
+                                    <MenuItem
+                                        key={name}
+                                        value={name}
+                                        style={getStyles(name, personName, theme)}
+                                    >
+                                        {name}
+                                    </MenuItem>
+                                ))}
+                            </Select>
+                        </FormControl>
+                    </Grid>
+                    <Grid item xs={6} sm={3} md={3}>
+                        <FormControl sx={{ m: 4, width: 250, mt: 3 }}>
+                            <Select
+                                multiple
+                                displayEmpty
+                                value={personLocation}
+                                onChange={handleChange}
+                                input={<OutlinedInput />}
+                                renderValue={(selected) => {
+                                    if (selected.length === 0) {
+                                        return <em>Location</em>;
+                                    }
 
-                                return selected.join(', ');
-                            }}
-                            MenuProps={MenuProps}
-                            inputProps={{ 'aria-label': 'Without label' }}
-                        >
-                            <MenuItem disabled value="">
-                                <em>Location</em>
-                            </MenuItem>
-                            {location.map((name) => (
-                                <MenuItem
-                                    key={name}
-                                    value={name}
-                                    style={getStyles(name, personName, theme)}
-                                >
-                                    {name}
+                                    return selected.join(', ');
+                                }}
+                                MenuProps={MenuProps}
+                                inputProps={{ 'aria-label': 'Without label' }}
+                            >
+                                <MenuItem disabled value="">
+                                    <em>Location</em>
                                 </MenuItem>
-                            ))}
-                        </Select>
-                    </FormControl>
+                                {location.map((name) => (
+                                    <MenuItem
+                                        key={name}
+                                        value={name}
+                                        style={getStyles(name, personName, theme)}
+                                    >
+                                        {name}
+                                    </MenuItem>
+                                ))}
+                            </Select>
+                        </FormControl>
+                    </Grid>
                 </Grid>
-            </Grid>
 
 
 
-            <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-                <Grid item xs={6} sm={3} md={3}>
+                <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+                    <Grid item xs={6} sm={3} md={3}>
 
-                    <FormControl sx={{ m: 4, width: 250, mt: 3 }}>
-                        <Select
-                            multiple
-                            displayEmpty
-                            value={personRole}
-                            onChange={handleChange}
-                            input={<OutlinedInput />}
-                            renderValue={(selected) => {
-                                if (selected.length === 0) {
-                                    return <em>Role</em>;
-                                }
+                        <FormControl sx={{ m: 4, width: 250, mt: 3 }}>
+                            <Select
+                                multiple
+                                displayEmpty
+                                value={personRole}
+                                onChange={handleChange}
+                                input={<OutlinedInput />}
+                                renderValue={(selected) => {
+                                    if (selected.length === 0) {
+                                        return <em>Role</em>;
+                                    }
 
-                                return selected.join(', ');
-                            }}
-                            MenuProps={MenuProps}
-                            inputProps={{ 'aria-label': 'Without label' }}
-                        >
-                            <MenuItem disabled value="">
-                                <em>Role</em>
-                            </MenuItem>
-                            {role.map((name) => (
-                                <MenuItem
-                                    key={name}
-                                    value={name}
-                                    style={getStyles(name, personName, theme)}
-                                >
-                                    {name}
+                                    return selected.join(', ');
+                                }}
+                                MenuProps={MenuProps}
+                                inputProps={{ 'aria-label': 'Without label' }}
+                            >
+                                <MenuItem disabled value="">
+                                    <em>Role</em>
                                 </MenuItem>
-                            ))}
-                        </Select>
-                    </FormControl>
+                                {role.map((name) => (
+                                    <MenuItem
+                                        key={name}
+                                        value={name}
+                                        style={getStyles(name, personName, theme)}
+                                    >
+                                        {name}
+                                    </MenuItem>
+                                ))}
+                            </Select>
+                        </FormControl>
 
-                </Grid>
-                <Grid item xs={6} sm={3} md={3}>
+                    </Grid>
+                    <Grid item xs={6} sm={3} md={3}>
 
-                    <FormControl sx={{ m: 4, width: 250, mt: 3 }}>
-                        <Select
-                            multiple
-                            displayEmpty
-                            value={personStack}
-                            onChange={handleChange}
-                            input={<OutlinedInput />}
-                            renderValue={(selected) => {
-                                if (selected.length === 0) {
-                                    return <em>Tech Stack</em>;
-                                }
+                        <FormControl sx={{ m: 4, width: 250, mt: 3 }}>
+                            <Select
+                                multiple
+                                displayEmpty
+                                value={personStack}
+                                onChange={handleChange}
+                                input={<OutlinedInput />}
+                                renderValue={(selected) => {
+                                    if (selected.length === 0) {
+                                        return <em>Tech Stack</em>;
+                                    }
 
-                                return selected.join(', ');
-                            }}
-                            MenuProps={MenuProps}
-                            inputProps={{ 'aria-label': 'Without label' }}
-                        >
-                            <MenuItem disabled value="">
-                                <em>Teck Stack</em>
-                            </MenuItem>
-                            {teckStack.map((name) => (
-                                <MenuItem
-                                    key={name}
-                                    value={name}
-                                    style={getStyles(name, personName, theme)}
-                                >
-                                    {name}
+                                    return selected.join(', ');
+                                }}
+                                MenuProps={MenuProps}
+                                inputProps={{ 'aria-label': 'Without label' }}
+                            >
+                                <MenuItem disabled value="">
+                                    <em>Teck Stack</em>
                                 </MenuItem>
-                            ))}
-                        </Select>
-                    </FormControl>
+                                {teckStack.map((name) => (
+                                    <MenuItem
+                                        key={name}
+                                        value={name}
+                                        style={getStyles(name, personName, theme)}
+                                    >
+                                        {name}
+                                    </MenuItem>
+                                ))}
+                            </Select>
+                        </FormControl>
 
-                </Grid>
-                <Grid item xs={6} sm={3} md={3}>
-                    <FormControl sx={{ m: 4, width: 250, mt: 3 }}>
-                        <Select
-                            multiple
-                            displayEmpty
-                            value={personSalary}
-                            onChange={handleChange}
-                            input={<OutlinedInput />}
-                            renderValue={(selected) => {
-                                if (selected.length === 0) {
-                                    return <em>Annual salary (in lakhs)</em>;
-                                }
+                    </Grid>
+                    <Grid item xs={6} sm={3} md={3}>
+                        <FormControl sx={{ m: 4, width: 250, mt: 3 }}>
+                            <Select
+                                multiple
+                                displayEmpty
+                                value={personSalary}
+                                onChange={handleChange}
+                                input={<OutlinedInput />}
+                                renderValue={(selected) => {
+                                    if (selected.length === 0) {
+                                        return <em>Annual salary (in lakhs)</em>;
+                                    }
 
-                                return selected.join(', ');
-                            }}
-                            MenuProps={MenuProps}
-                            inputProps={{ 'aria-label': 'Without label' }}
-                        >
-                            <MenuItem disabled value="">
-                                <em>Annual salary (in lakhs)</em>
-                            </MenuItem>
-                            {salary.map((name) => (
-                                <MenuItem
-                                    key={name}
-                                    value={name}
-                                    style={getStyles(name, personName, theme)}
-                                >
-                                    {name}
+                                    return selected.join(', ');
+                                }}
+                                MenuProps={MenuProps}
+                                inputProps={{ 'aria-label': 'Without label' }}
+                            >
+                                <MenuItem disabled value="">
+                                    <em>Annual salary (in lakhs)</em>
                                 </MenuItem>
-                            ))}
-                        </Select>
-                    </FormControl>
+                                {salary.map((name) => (
+                                    <MenuItem
+                                        key={name}
+                                        value={name}
+                                        style={getStyles(name, personName, theme)}
+                                    >
+                                        {name}
+                                    </MenuItem>
+                                ))}
+                            </Select>
+                        </FormControl>
+                    </Grid>
+                    <Grid item xs={6} sm={3} md={3}>
+                        <Button variant="contained" size="large" style={{ background: "black", marginTop: "25px", marginLeft: "25px", width: "250px", height: "55px" }}>Search</Button>
+                    </Grid>
                 </Grid>
-                <Grid item xs={6} sm={3} md={3}>
-                    <Button variant="contained" size="large" style={{background:"black", marginTop: "25px", marginLeft: "25px", width: "250px", height: "55px" }}>Search</Button>
-
-                </Grid>
-            </Grid>
-
-
-        </Container>
+            </Container>
         </Box>
     );
 }
