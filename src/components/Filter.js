@@ -8,7 +8,7 @@ import OutlinedInput from '@mui/material/OutlinedInput';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
-import { Container } from '@mui/material';
+import { Container,Typography } from '@mui/material';
 import Button from '@mui/material/Button';
 
 const ITEM_HEIGHT = 48;
@@ -157,9 +157,17 @@ export default function Filter() {
         );
     };
     return (
-        <Container>
-            <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-                <Grid item xs={3}>
+       <Box>
+        <Box bgcolor="black" color="white" style={{height:"200px"}}>
+             <Typography variant='h4' align='center' style={{paddingTop:"80px"}}>
+                Candidate Application
+            </Typography>
+            </Box>
+       
+       <Container>
+           
+            <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+                <Grid item xs={6} sm={3} md={3}>
 
                     <FormControl sx={{ m: 4, width: 250, mt: 3 }}>
                         <Select
@@ -194,7 +202,7 @@ export default function Filter() {
                     </FormControl>
 
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item xs={6} sm={3} md={3}>
 
                     <FormControl sx={{ m: 4, width: 250, mt: 3 }}>
                         <Select
@@ -229,7 +237,7 @@ export default function Filter() {
                     </FormControl>
 
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item xs={6} sm={3} md={3}>
                     <FormControl sx={{ m: 4, width: 250, mt: 3 }}>
                         <Select
                             multiple
@@ -262,7 +270,7 @@ export default function Filter() {
                         </Select>
                     </FormControl>
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item xs={6} sm={3} md={3}>
                     <FormControl sx={{ m: 4, width: 250, mt: 3 }}>
                         <Select
                             multiple
@@ -299,8 +307,8 @@ export default function Filter() {
 
 
 
-            <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-                <Grid item xs={3}>
+            <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+                <Grid item xs={6} sm={3} md={3}>
 
                     <FormControl sx={{ m: 4, width: 250, mt: 3 }}>
                         <Select
@@ -335,7 +343,7 @@ export default function Filter() {
                     </FormControl>
 
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item xs={6} sm={3} md={3}>
 
                     <FormControl sx={{ m: 4, width: 250, mt: 3 }}>
                         <Select
@@ -370,7 +378,7 @@ export default function Filter() {
                     </FormControl>
 
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item xs={6} sm={3} md={3}>
                     <FormControl sx={{ m: 4, width: 250, mt: 3 }}>
                         <Select
                             multiple
@@ -403,7 +411,7 @@ export default function Filter() {
                         </Select>
                     </FormControl>
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item xs={6} sm={3} md={3}>
                     <Button variant="contained" size="large" style={{ marginTop: "25px", marginLeft: "25px", width: "250px", height: "55px" }}>Search</Button>
 
                 </Grid>
@@ -411,5 +419,6 @@ export default function Filter() {
 
 
         </Container>
+        </Box>
     );
 }

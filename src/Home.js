@@ -38,9 +38,7 @@ export default function JobCard() {
 
     return (
         <Container >
-            <Typography variant='h4' align='center' style={{ marginTop: "50px" }}>
-                Job Application
-            </Typography>
+           
             <Grid container spacing={5} style={{ marginTop: "20px" }}>
                 {
                     Data.map((result, index) => (
