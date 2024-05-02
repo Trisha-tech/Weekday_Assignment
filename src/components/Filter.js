@@ -411,7 +411,7 @@ export default function Filter() {
                     </FormControl>
                 </Grid>
                 <Grid item xs={6} sm={3} md={3}>
-                    <Button variant="contained" size="large" style={{ marginTop: "25px", marginLeft: "25px", width: "250px", height: "55px" }}>Search</Button>
+                    <Button variant="contained" size="large" style={{background:"black", marginTop: "25px", marginLeft: "25px", width: "250px", height: "55px" }}>Search</Button>
 
                 </Grid>
             </Grid>
