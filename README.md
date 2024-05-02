@@ -6,7 +6,7 @@ The task is to create a candidate application platform that allows users to view
 
 
 
-**DEPLOYED LINK:**  
+**DEPLOYED LINK:**  https://weekday-assignment.onrender.com/
 
 
 ## 📌 Tech Stack
